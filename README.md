@@ -9,13 +9,17 @@
 ### Installation
 Cloner le repo :
 ```sh
-$ git clone git@github.com:zHatsuharu/Pokemon-Card-Collection.git
-$ cd Pokemon-Card-Collection
+git clone git@github.com:zHatsuharu/Pokemon-Card-Collection.git
+```
+
+Aller dans le dossier cloné :
+```sh
+cd Pokemon-Card-Collection
 ```
 
 Installer npm packages :
 ```sh
-$ npm i
+npm i
 ```
 
 Créer le fichier `.env` à la racine et le compléter en suivant l'exemple `.env.exemple` avec :
@@ -24,7 +28,7 @@ Créer le fichier `.env` à la racine et le compléter en suivant l'exemple `.en
 
 Lancer le projet :
 ```sh
-$ npm run dev
+npm run dev
 ```
 
 Accéder au site via `http://localhost:5174/`
