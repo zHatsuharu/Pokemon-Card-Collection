@@ -2,6 +2,7 @@
 
 ### Techno :
 - React TS (Vite)
+- Next-Ui
 - Firebase
 - Pokemon TCG API
 
