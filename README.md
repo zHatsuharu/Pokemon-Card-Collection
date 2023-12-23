@@ -33,6 +33,10 @@ npm run dev
 
 Accéder au site via `http://localhost:5174/`
 
+Le compte de test :
+- `email` : `test@mail.com`
+- `pass`  : `testtest`
+
 ---
 ### Fonctionnalités
 - `Home` : Regroupe toutes les cartes pokémons, on peut cliquer dessus pour obtenir les informations de ventes.
