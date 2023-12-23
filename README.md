@@ -42,7 +42,7 @@ Accéder au site via `http://localhost:5174/`
 
 ---
 ### To Do
-> Cette liste contient les améliorations possible au site.
+> Cette liste contient les améliorations possibles au site.
 
 - [ ] Création de ses propres decks
 - [ ] Améliorer certains affichages (collection, informations cartes)
