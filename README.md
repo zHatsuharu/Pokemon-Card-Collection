@@ -1,30 +1,50 @@
-# React + TypeScript + Vite
+# Pokemon Card Collection
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Techno :
+- React TS (Vite)
+- Firebase
+- Pokemon TCG API
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+---
+### Installation
+Cloner le repo :
+```sh
+$ git clone git@github.com:zHatsuharu/Pokemon-Card-Collection.git
+$ cd Pokemon-Card-Collection
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Installer npm packages :
+```sh
+$ npm i
+```
+
+Créer le fichier `.env` à la racine et le compléter en suivant l'exemple `.env.exemple` avec :
+- `VITE_API_KEY` votre clé api obtenable sur le site [Pokemon TCG API](https://dev.pokemontcg.io/) après vous êtes crées un compte
+- `VITE_API_URL` url de base de l'api (mettez `https://api.pokemontcg.io/v2/`)
+
+Lancer le projet :
+```sh
+$ npm run dev
+```
+
+Accéder au site via `http://localhost:5174/`
+
+---
+### Fonctionnalités
+- `Home` : Regroupe toutes les cartes pokémons, on peut cliquer dessus pour obtenir les informations de ventes.
+- `Login/Sign Up` : Système de connexion pour pouvoir sauvegarder sa propre collection.
+- `Sets` : Contient tous les sets des cartes avec accès aux cartes qui appartiennent au set.
+- `Collection` : Permet de gérer sa collection de cartes.
+
+---
+### To Do
+> Cette liste contient les améliorations possible au site.
+
+- [ ] Création de ses propres decks
+- [ ] Améliorer certains affichages (collection, informations cartes)
+- [ ] Création d'un blog d'aide pour chercher les cartes
+- [ ] Refonte des utilisateurs
+  - [ ] Utilisateur personnalisable (avatar)
+  - [ ] Permettre le changement de mot de passe ou email
+  - [ ] Ajouter des favoris sur les cartes
+- [ ] Ajout récupération de compte si mot de passe oublié
